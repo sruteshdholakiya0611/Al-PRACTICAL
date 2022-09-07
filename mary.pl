@@ -1,7 +1,21 @@
+
+
+
+likes(mary,food).
+likes(john,wine).
 likes(mary,wine).
-likes(mary,raj).
-likes(raj,coffe).
-likes(john,X):-likes(mary,X).
-likes(mary,Y):-likes(raj,Y).
-likes(raj,food2(X)).
-food2(apple).
+likes(john,mary).
+
+likes(john,X) :-
+    likes(mary,X).
+
+likes(john, Y) :-
+    likes(Y,wine).
+
+likes(raj,wine).
+
+likes(shyam,shyam).
+
+likes(john,X):-
+    likes(X,X).
+
