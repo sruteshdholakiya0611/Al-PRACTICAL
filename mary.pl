@@ -1,6 +1,3 @@
-
-
-
 likes(mary,food).
 likes(john,wine).
 likes(mary,wine).
@@ -13,6 +10,10 @@ likes(john, Y) :-
     likes(Y,wine).
 
 likes(raj,wine).
+likes(srutesh, food).
+
+likes(srutesh, X) :-
+    likes(john, X).
 
 likes(shyam,shyam).
 
